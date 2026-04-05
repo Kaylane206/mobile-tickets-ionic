@@ -41,3 +41,5 @@ O usuário pode emitir três tipos de senha:
 - **SP** → Senha Prioritária
 - **SG** → Senha Geral
 - **SE** → Senha de Exames
+
+https://github.com/Kaylane206/mobile-tickets-ionic/tree/main
