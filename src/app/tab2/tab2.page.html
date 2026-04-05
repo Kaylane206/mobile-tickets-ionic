@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Painel de Atendimento</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding fundo-app">
+
+  <ion-button expand="block" color="warning" class="btn-chamar" (click)="chamarProxima()">
+    Chamar Próxima Senha
+  </ion-button>
+
+  <ion-card class="card-destaque" *ngIf="senhaAtual">
+    <ion-card-header>
+      <ion-card-title>Senha Atual</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h1>{{ senhaAtual.numero }}</h1>
+      <p>Tipo: {{ senhaAtual.tipo }}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="card-padrao">
+    <ion-card-header>
+      <ion-card-title>Fila de Espera</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list lines="full">
+        <ion-item *ngFor="let senha of getFilaEspera()">
+          <ion-label>{{ senha.numero }}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="card-padrao">
+    <ion-card-header>
+      <ion-card-title>Últimas 5 Chamadas</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list lines="full">
+        <ion-item *ngFor="let senha of ultimasChamadas">
+          <ion-label>{{ senha.numero }}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

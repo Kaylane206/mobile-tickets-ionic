@@ -1,0 +1,76 @@
+.fundo-app {
+  --background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
+  color: white;
+}
+
+.titulo-secao {
+  margin-bottom: 24px;
+
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+
+  p {
+    color: #cbd5e1;
+    font-size: 15px;
+  }
+}
+
+.botoes-senha {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+ion-button {
+  height: 52px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 14px;
+  --border-radius: 14px;
+  text-transform: none;
+}
+
+.btn-sp {
+  --background: linear-gradient(135deg, #ef4444, #dc2626);
+  --color: white;
+}
+
+.btn-sg {
+  --background: linear-gradient(135deg, #3b82f6, #2563eb);
+  --color: white;
+}
+
+.btn-se {
+  --background: linear-gradient(135deg, #22c55e, #16a34a);
+  --color: white;
+}
+
+.card-ultima {
+  background: #1e293b;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+
+  ion-card-title {
+    color: #f8fafc;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  ion-card-content {
+    text-align: center;
+    padding: 20px;
+
+    h1 {
+      font-size: 34px;
+      font-weight: bold;
+      color: #facc15; // amarelo forte para destacar
+      margin: 0;
+      letter-spacing: 1px;
+    }
+  }
+}

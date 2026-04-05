@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Emitir Senha</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding fundo-app">
+
+  <div class="titulo-secao">
+    <h2>Escolha o tipo de senha</h2>
+    <p>Selecione abaixo a categoria de atendimento</p>
+  </div>
+
+  <div class="botoes-senha">
+    <ion-button expand="block" class="btn-sp" (click)="emitirSenha('SP')">
+      Emitir SP - Prioritária
+    </ion-button>
+
+    <ion-button expand="block" class="btn-sg" (click)="emitirSenha('SG')">
+      Emitir SG - Geral
+    </ion-button>
+
+    <ion-button expand="block" class="btn-se" (click)="emitirSenha('SE')">
+      Emitir SE - Exames
+    </ion-button>
+  </div>
+
+  <ion-card class="card-ultima" *ngIf="ultimaSenha">
+    <ion-card-header>
+      <ion-card-title>Última senha emitida</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h1>{{ ultimaSenha }}</h1>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Relatórios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding fundo-app">
+
+  <ion-card class="card-total">
+    <ion-card-header>
+      <ion-card-title>Total de Senhas Emitidas</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h1>{{ getTotal() }}</h1>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="card-sp">
+    <ion-card-header>
+      <ion-card-title>SP - Prioritária</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h2>{{ getTotalSP() }}</h2>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="card-sg">
+    <ion-card-header>
+      <ion-card-title>SG - Geral</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h2>{{ getTotalSG() }}</h2>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="card-se">
+    <ion-card-header>
+      <ion-card-title>SE - Exames</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h2>{{ getTotalSE() }}</h2>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="card-ultima">
+    <ion-card-header>
+      <ion-card-title>Última Senha Emitida</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ getUltimaSenha() }}</p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

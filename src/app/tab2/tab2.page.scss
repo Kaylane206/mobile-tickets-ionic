@@ -1,0 +1,63 @@
+.fundo-app {
+  --background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
+  color: white;
+}
+
+.btn-chamar {
+  height: 54px;
+  font-size: 17px;
+  font-weight: bold;
+  --border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+.card-destaque {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+
+  ion-card-title {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  ion-card-content {
+    text-align: center;
+
+    h1 {
+      font-size: 40px;
+      color: #facc15;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    p {
+      color: #cbd5e1;
+      font-size: 18px;
+    }
+  }
+}
+
+.card-padrao {
+  background: #1e293b;
+  border-radius: 18px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+
+  ion-card-title {
+    color: #f8fafc;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  ion-item {
+    --background: transparent;
+    --color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  ion-label {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
